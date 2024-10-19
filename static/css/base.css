@@ -101,7 +101,20 @@ body {
 
 .container {
   max-width: 960px;
-  margin-top: 35px;
+  margin-top: 40px;
+  background-color: white;
+}
+
+.container2 {
+  max-width: 960px;
+  margin-top: 30px;
+  margin-left: 280px;
+}
+
+.btn-success {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .navbar-brand {
