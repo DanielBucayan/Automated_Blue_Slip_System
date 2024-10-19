@@ -4,8 +4,77 @@
 {% block title %}Home page{% endblock title %}
 
 {% block content %}
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <img src="{% static 'images/logo.png' %}" class="img-fluid" alt="DjangoX logo"/>
-  <p class="lead">A Django starter project with batteries.</p>
+<div class="pricing-header">
+  <img src="{% static 'images/mini-logo.png' %}" class="img-fluid" width="35%" alt="APC logo"/>
+  {% if user.is_authenticated %}
+  <h2 class="greeting py-3">Welcome, {{ user.username }}!</h2>
 </div>
+<div class="options1">
+  <img src="{% static 'images/appeal.webp' %}" width="100%" alt="Appeal logo"/>
+  <button class="appeal" onclick="window.location.href='https://expert-disco-g9prq7qq5q9hw7g9-8000.app.github.dev/about/'">File Appeal</button>
+</div>
+<div class="options2">
+    <img src="{% static 'images/glass.webp' %}" width="100%" alt="Status logo"/>
+    <button class="appeal" onclick="window.location.href='https://expert-disco-g9prq7qq5q9hw7g9-8000.app.github.dev/about/'">View Appeal Status</button>
+</div>
+  {% else %}
+  <h2 class="greeting py-3">Welcome, User!</h2>
+</div>
+<div class="policy2">
+  <h2 class="code">Dress Code for Female</h2>
+  <h4 class="mini">Mondays and Tuesdays (Corporate Attire)</h4>
+  <ul>
+  <li>Blouse with collar and sleeves, or collarless corporate
+    blouse with sleeves</li>
+    <li>Blouse without sleeves under a blazer, light cardigan
+      sweater or light coat</li>
+    <li>Corporate skirt or corporate dress (must be kneelength or longer)</li>
+    <li>Corporate ladies shoes (leather or leatherette)</li>
+  </ul>
+  <h4 class="mini">Wednesdays and Thursdays (Smart Casual Attire)</h4>
+  <ul>
+    <li>Blouse with collar and sleeves, or collarless corporate
+      blouse with sleeves</li>
+      <li>Blouse without sleeves under a blazer, light cardigan
+        sweater or light coat</li>
+      <li>Skirt or Dress (must be knee-length or longer)</li>
+      <li>Corporate slacks</li>
+      <li>Corporate ladies shoes (leather or leatherette)</li>
+    </ul>
+    <h4 class="mini">Fridays and Saturdays (Casual Attire)</h4>
+    <ul>
+      <li>T-shirt, collared shirts</li>
+      <li>Jeans, leggings, jeggings, etc.</li>
+      <li>Any type of footwear except flip flops and slippers.</li>
+      </ul>
+</div>
+<div class="policy">
+  <h2 class="code">Dress Code for Male</h2>
+  <h4 class="mini">Mondays and Tuesdays (Corporate Attire)</h4>
+  <ul>
+  <li>Long-sleeved or short-sleeved button-down shirt (tucked in)
+    with a necktie, or Barong (long-sleeved or short-sleeved with
+    plain white undershirt)</li>
+    <li>Corporate slacks (wool or cotton).</li>
+    <li>Office leather shoes (black or brown) with dark colored men’s
+      socks</li>
+  </ul>
+  <h4 class="mini">Wednesdays and Thursdays (Smart Casual Attire)</h4>
+  <ul>
+    <li>Long-sleeved or short-sleeved button-down shirt, or Barong
+      (long-sleeved or short-sleeved with plain white undershirt)</li>
+    <li>Corporate slacks (wool or cotton).</li>
+    <li>Office leather shoes (black or brown) with dark colored men’s
+      socks</li>
+    </ul>
+    <h4 class="mini">Fridays and Saturdays (Casual Attire)</h4>
+    <ul>
+      <li>T-shirt or polo shirt</li>
+      <li>Jeans, chinos, or jogger pants</li>
+      <li>Rubber shoes, topsiders, sneakers, loafers, etc., except
+        flip flops and slippers.</li>
+      </ul>
+</div>
+
+{% endif %}
 {% endblock content %}
