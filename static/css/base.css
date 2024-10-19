@@ -111,6 +111,13 @@ body {
   margin-left: 280px;
 }
 
+.yellow-container {
+  margin-bottom: 20px; /* Space between containers */
+  padding: 10px; /* Padding inside the container */
+  background-color: #f0bb0d; /* Light blue background */
+  border-radius: 5px; /* Optional: rounds the corners */
+}
+
 .btn-success {
   margin-top: 15px;
   margin-right: 15px;
