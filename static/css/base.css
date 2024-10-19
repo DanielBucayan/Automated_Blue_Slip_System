@@ -111,6 +111,13 @@ body {
   margin-left: 280px;
 }
 
+.proj {
+  background-color: white;
+  position: flex;
+  width: 925px;
+  height: 350px;
+}
+
 .yellow {
   background-color: white;
   position: flex;
