@@ -8,5 +8,5 @@ class AboutPageView(TemplateView):
     template_name = "pages/about.html"
 
 class AdminHomePageView(TemplateView):
-    template_name = "admin_home.html"
+    template_name = "pages/admin_home.html"
 
