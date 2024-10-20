@@ -1,15 +1,18 @@
 from django.views.generic import TemplateView
+from django.utils.timezone import now
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
-# Home and About Views
 class HomePageView(TemplateView):
     template_name = "pages/home.html"
 
-
 class AboutPageView(TemplateView):
     template_name = "pages/about.html"
+
+
+class AdminHomePageView(TemplateView):
+    template_name = "pages/admin_home.html"
 
 # File Appeal View
 @method_decorator(login_required, name='dispatch')  # Ensures the user is logged in
@@ -36,6 +39,7 @@ class AppealSuccess(TemplateView):
 
 class ViewStatus(TemplateView):
     template_name = "pages/view_status.html"
+
 
 
 
