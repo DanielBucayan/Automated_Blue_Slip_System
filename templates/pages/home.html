@@ -11,7 +11,7 @@
 </div>
 <div class="options1">
   <img src="{% static 'images/appeal.webp' %}" width="100%" alt="Appeal logo"/>
-  <button class="appeal" onclick="window.location.href='https://expert-disco-g9prq7qq5q9hw7g9-8000.app.github.dev/about/'">File Appeal</button>
+  <a href="{% url 'file_appeal' %}" class="appeal">File Appeal</a> 
 </div>
 <div class="options2">
     <img src="{% static 'images/glass.webp' %}" width="100%" alt="Status logo"/>
