@@ -111,6 +111,28 @@ body {
   margin-left: 280px;
 }
 
+.proj {
+  background-color: white;
+  position: flex;
+  width: 925px;
+  height: 350px;
+}
+
+.yellow {
+  background-color: white;
+  position: flex;
+  width: 925px;
+  height: 550px;
+}
+
+.yellow-container {
+  position: flex;
+  margin-bottom: 20px; /* Space between containers */
+  padding: 11px; /* Padding inside the container */
+  background-color: #f0bb0d; /* Light yellow background */
+  border-radius: 5px; /* Optional: rounds the corners */
+}
+
 .btn-success {
   margin-top: 15px;
   margin-right: 15px;
