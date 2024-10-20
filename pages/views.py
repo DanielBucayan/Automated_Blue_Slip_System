@@ -34,5 +34,8 @@ class FileAppeal(TemplateView):
 class AppealSuccess(TemplateView):
     template_name = "pages/appeal_success.html"
 
+class ViewStatus(TemplateView):
+    template_name = "pages/view_status.html"
+
 
 

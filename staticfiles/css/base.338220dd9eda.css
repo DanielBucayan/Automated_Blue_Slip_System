@@ -84,20 +84,6 @@ ul {
   cursor: pointer;
 }
 
-.status {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
 .appeal:hover {
   background-color: #00603d;
 }
@@ -110,7 +96,7 @@ ul {
 
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
-  background: url("/static/images/Media.png") 50%;
+  background: url("/static/images/Media.9128c2283468.png") 50%;
   background-size: cover;
 }
 

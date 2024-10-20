@@ -15,7 +15,7 @@
 </div>
 <div class="options2">
     <img src="{% static 'images/glass.webp' %}" width="100%" alt="Status logo"/>
-    <button class="appeal" onclick="window.location.href='https://expert-disco-g9prq7qq5q9hw7g9-8000.app.github.dev/about/'">View Appeal Status</button>
+    <a href="{% url 'view_status' %}" class="status">View Appeal Status</a>
 </div>
   {% else %}
   <h2 class="greeting py-3">Welcome, User!</h2>
