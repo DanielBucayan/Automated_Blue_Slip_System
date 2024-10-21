@@ -13,6 +13,9 @@ class HomePageView(TemplateView):
 class AboutPageView(TemplateView):
     template_name = "pages/about.html"
 
+class AboutPageView(TemplateView):
+    template_name = "pages/view_status.html"
+
 class AdminHomePageView(UserPassesTestMixin, TemplateView):
     template_name = "pages/admin_home.html"
 
