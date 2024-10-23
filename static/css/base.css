@@ -25,7 +25,7 @@ html {
   outline: 4px solid gold;
   background-color: white;
   position: absolute;
-  top: 320px;
+  top: 300px;
   left: 300px;
   width: 300px;
 }
@@ -224,6 +224,7 @@ body {
 
 .card-body {
   flex-grow: 1;
+}
 
 .appeal-form {
   max-width: 600px;
