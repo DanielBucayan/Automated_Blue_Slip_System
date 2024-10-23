@@ -16,6 +16,11 @@ html {
   font-weight: 200;
 }
 
+.messages {
+  color: white;
+  margin-top: 5px;
+}
+
 .options1 {
   outline: 4px solid gold;
   background-color: white;
@@ -39,7 +44,7 @@ html {
   outline: 4px solid gold;
   background-color: white;
   position: absolute;
-  top: 250px;
+  top: 265px;
   left: 200px;
   width: 500px;
 }
@@ -47,7 +52,7 @@ html {
   outline: 4px solid gold;
   background-color: white;
   position: absolute;
-  top: 250px;
+  top: 265px;
   right: 200px;
   width: 500px;
 }
@@ -154,6 +159,12 @@ body {
   margin-bottom: 15px;
 }
 
+.btn-danger {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
 .navbar-brand {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -213,6 +224,7 @@ body {
 
 .card-body {
   flex-grow: 1;
+}
 
 .appeal-form {
   max-width: 600px;

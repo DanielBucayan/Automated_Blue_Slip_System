@@ -21,6 +21,13 @@
 </head>
 
 <body>
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'home' %}">ABS System</a>
@@ -31,16 +38,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
+            {% if user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'admin_home' %}">Home</a>
+          </li>
+          {% else %}
             <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
+          {% endif %}
           <li class="nav-item">
             <a class="nav-link" href="{% url 'about' %}">About</a>
           </li>
-          {% if user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'admin_home' %}">Admin</a>
-          </li>
-          {% endif %}
         </ul>
         {% if user.is_authenticated %}
         <div class="mr-auto">
