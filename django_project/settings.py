@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     # Local
     "accounts",
     "pages",
+    'rate_limit_app',
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#middleware
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",  # django-allauth
+    'rate_limit_app.middleware.RateLimitMiddleware',
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#root-urlconf
@@ -154,6 +156,7 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/stable/ref/settings/#default-auto-field
