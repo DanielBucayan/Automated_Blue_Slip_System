@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "accounts",
     "pages",
     'rate_limit_app',
+    'django_otp',
+    'django_otp.plugins.otp_totp',
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#middleware
@@ -55,6 +57,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",  # django-allauth
     'rate_limit_app.middleware.RateLimitMiddleware',
+    'django_otp.middleware.OTPMiddleware',
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#root-urlconf
