@@ -30,7 +30,26 @@
 
   </div>
 
+  <div class="violation-container">
+    <strong>ID:</strong> <span id="violationID" class="violation-id" onclick="toggleAppealStatus()">56789</span>
+
+
+    <strong>Date:</strong> <span id="violationDate">2024-11-10</span>
+
+
+    <strong>Violation:</strong> <span id="Violation">Short sleeve</span>
+
+
+    <a href="{% url 'file_appeal' %}" class="appeal">File Appeal</a>
 </div>
+<div class="dropdown-container" id="appealStatusContainer">
+    <label id="appealStatus"><strong>Appeal Status:</strong></label>
+    <span id="appealStatus"> Approved</span>
+
+
+</div>
+
+
 
 
 </main>

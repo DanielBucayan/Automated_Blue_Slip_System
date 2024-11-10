@@ -156,7 +156,7 @@ body {
 .violation {
   background-color: white;
   width: 925px;
-  height: 550px;
+  height: auto;
   position: absolute;
   top: 300px;
   left: 300px;
@@ -179,6 +179,31 @@ body {
   margin-top: 10px;
 }
 
+#violationID {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#violationDate {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#Violation {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#appealStatus {
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+#record {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
 
 .btn-success {
   margin-top: 15px;
